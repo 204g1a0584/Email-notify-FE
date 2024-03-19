@@ -1,0 +1,72 @@
+.download-btn-container {
+  text-align: right;
+  padding: 10px 0;
+}
+
+.custom-download-btn {
+  background-color: #f8f9fa; /* A light gray color */
+  color: #212529; /* Bootstrap's default dark color */
+  padding: 10px 20px;
+  border: 1px solid #dee2e6; /* Light border color */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.custom-download-btn:hover {
+  background-color: #e2e6ea; /* A slightly darker gray on hover */
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important; /* Bootstrap utility class */
+}
+
+.mb-3 {
+  margin-bottom: 1rem !important; /* Bootstrap utility class */
+}
+
+.custom-input-file {
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-input-file input[type="file"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  text-align: right;
+  opacity: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.success-message {
+  color: green;
+  margin-top: 10px;
+}
+
+.custom-button-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.custom-button-primary:disabled {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.custom-button-primary:hover:not(:disabled) {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
