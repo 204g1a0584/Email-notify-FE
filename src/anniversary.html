@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit&family=Sometype+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <title>Email Template</title>
+    <style>
+              /* Define styles for your email template */
+              body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f5f5f5;
+              }
+              .image-container {
+                position: relative;
+                /* text-align: center; */
+                /* color: white; */
+              }
+              .container {
+                max-width: 600px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #fff;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+              }
+
+              .header {
+                background-color: #007bff;
+                color: #fff;
+                text-align: center;
+                padding: 10px 0;
+                margin-bottom: 20px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+              }
+
+
+              .footer {
+                margin-top: 20px;
+                font-size: 14px;
+                color: rgb(15, 15, 15);
+                font-weight: bold;
+                            }              
+
+              .address {
+                text-align: left;
+                color: rgb(218, 154, 71);
+                /* Align the address to the left */
+              }
+
+              .w {
+                width: 100%;
+              }
+              .over {
+                position: absolute;
+                top: 41.5%;
+                left: 2.3%;
+                color: #b84139;
+              }
+              .outfit {
+          font-family: "Outfit", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 400;
+          font-style: normal;
+              }
+
+        .nu{
+          font-family: "Outfit", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 400;
+          position: absolute;
+           top: 15%;
+          left: 18%;
+          color: #278136;}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 class="w">It's your milestone moment with us!</h1>
+      </div>
+
+      <div class="image-container">
+        <img class="w" src="./anni2.jpg" height="100%" width="auto" />
+        <h1 text="${num}" class="nu">7<sup>th</sup></h1>
+        <h1 text="${name}" class="over outfit">Abhira</h1>
+      </div>
+
+      <!-- Inline image -->
+      <br />
+      <div class="footer">
+        <img
+          src="https://www.equitybulls.com/equitybullsadmin/uploads/Sagarsoft%20India%20Limited%202.jpg"
+          width="100px"
+          height="70px"
+        />
+        <p>Thanks & Regards,</p>
+        <p style="font-weight: bold; color:rgb(22, 129, 190)">Team Human Resources, Sagarsoft</p>
+        <p>
+          +91 4067191000 |
+          <a href="mailto:hrd@sagarsoft.in">hrd@sagarsoft.in</a>
+        </p>
+        <p style="color: rgb(221, 52, 9)" class="address">
+          SagarSoft (India) Limited | Plot No-111, 1st floor
+        </p>
+        <!-- Added the 'address' class -->
+        <p>Road No-10 | Jubilee Hills | Hyderabad</p>
+        <p><a href="https://www.sagarsoft.in/">www.sagarsoft.in</a></p>
+      </div>
+    </div>
+  </body>
+</html>
+
